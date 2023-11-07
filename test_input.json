@@ -1,0 +1,24 @@
+{
+  "input": {
+    "user_input": "Who are you?",
+    "mode": "chat",
+    "your_name": "Joe",
+    "character_name": "Betty",
+    "character_context": "You are a librarian",
+    "history": {
+      "internal": [
+        [
+          "hello?",
+          "Hello! How can I assist you today?"
+        ]
+      ],
+      "visible": [
+        [
+          "hello?",
+          "Hello! How can I assist you today?"
+        ]
+      ]
+    }
+  },
+  "webhook": "https://webhook.site/44cfbfc5-871f-492f-8b73-c7490c99980c"
+}
