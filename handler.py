@@ -23,7 +23,7 @@ def handler(event):
         # If the job is done, POST back to the webhook url the job completion
         requests.post(webhook, json=event)
 
-    url = "http://0.0.0.0:5000/api/v1/generate"
+    url = "http://0.0.0.0:5000/v1/completions"
     chat_input_url = "http://0.0.0.0:5000/api/v1/chat"
 
     headers = {

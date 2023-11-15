@@ -39,8 +39,11 @@ cp -f template.env .env
 echo "HUGGING_FACE_MODEL=$MODEL_NAME" >> .env
 echo "CLI_ARGS=--model $MODEL_FILE --listen --auto-devices --api --loader exllama_hf" >> .env
 
+export FORCE_CUDA="1"
+FORCE_CUDA="1"
+
 # Build
-sudo docker compose up --build
+sudo docker compose up
 
 # Get the latest image ID
 IMAGE_ID=$(sudo docker images --format "{{.ID}}" --filter "reference=${SOURCE_REPOSITORY}:${SOURCE_TAG}" | head -n 1)

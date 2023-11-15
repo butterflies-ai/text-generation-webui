@@ -45,7 +45,7 @@ RUN --mount=type=cache,target=/root/.cache/pip,rw \
     . /app/venv/bin/activate && \
     pip3 install --upgrade pip setuptools wheel ninja && \
     pip3 install torch --index-url https://download.pytorch.org/whl/cu121 && \
-    pip3 install torchvision torchaudio sentence_transformers xformers
+    pip3 install torchvision torchaudio sentence_transformers xformers==0.0.12
 
 # Copy and install GPTQ-for-LLaMa
 COPY --from=builder /build /app/repositories/GPTQ-for-LLaMa
