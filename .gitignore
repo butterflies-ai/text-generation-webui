@@ -13,6 +13,8 @@
 /softprompts
 /torch-dumps
 /training/datasets
+/models
+/models_cache
 
 /CMD_FLAGS.txt
 /img_bot*

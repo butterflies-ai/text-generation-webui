@@ -2,9 +2,12 @@
 
 source "./build_scripts/$1.env"
 
-SOURCE_REPOSITORY="text-generation-ui-text-generation-webui"
+SOURCE_REPOSITORY="text-generation-webui-text-generation-webui"
 SOURCE_TAG="latest"
-TARGET_REPOSITORY="vu0tran/text-generation-app"
+TARGET_REPOSITORY="vubutterflies/text-generation-app"
+
+MODEL_NAME=TheBloke/LLaMA2-13B-Tiefighter-GPTQ
+TARGET_TAG=LLaMA2-13B-Tiefighter-GPTQ
 
 if [ -z "$MODEL_FILE" ]; then
   MODEL_FILE=${MODEL_NAME//\//_}

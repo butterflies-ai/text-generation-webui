@@ -2,6 +2,7 @@ version: "3.3"
 services:
   text-generation-webui:
     build:
+      dockerfile: ./docker/Dockerfile
       context: .
       args:
         # specify which cuda version your card supports: https://developer.nvidia.com/cuda-gpus
